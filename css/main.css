@@ -298,6 +298,7 @@ header nav .toggle-menu {
 }
 .portfolio .container .shuffle li {
     padding: 10px;
+    transition: 0.1s;
 }
 .portfolio .container .shuffle li:hover {
     background-color: var(--main-color);
