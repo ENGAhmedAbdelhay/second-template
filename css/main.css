@@ -542,7 +542,7 @@ header nav .toggle-menu {
     height: 30px;
 }
 .our-skills .skills .prog-holder .prog span::before {    
-    content: attr(data-progres);
+    content: attr(data-progress);
     position: absolute;
     background-color: black;
     color: white;
@@ -757,7 +757,12 @@ header nav .toggle-menu {
     .our-skills .testimonials .content img {
         margin: 0 auto 20px;
     }
-
+    .landing .fa-angle-left {
+        display: none;
+    }
+    .landing .fa-angle-right {
+        display: none;
+    }
 
 } 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -798,9 +803,9 @@ header nav .toggle-menu {
         flex-basis: 45%;
 
     }
-
-
-
+    header nav .toggle-menu {
+        display: none;
+    }
 } 
 @media (min-width: 1200px) {
     .container {
