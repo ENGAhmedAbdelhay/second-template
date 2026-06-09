@@ -10,6 +10,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    text-wrap: balance;
 }
 .main-heading {
     text-align: center;
