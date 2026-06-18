@@ -416,6 +416,7 @@ header nav .toggle-menu {
     text-align: center;
 }
 .about img {
+    z-index: -1;
     position: relative;
     bottom: -315px;
     margin-top: -610px;
