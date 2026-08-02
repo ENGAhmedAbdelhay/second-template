@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-VariableFont_wdth,wght.ttf') format('truetype-variations');
+    font-weight: 300 800;
+    font-style: normal;
+    font-display: swap;
+}
 :root {
     --main-color:#19c8fa;
     --transparent-color:rgb(12 116 143 / 70%);
@@ -55,7 +62,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: "open sans", sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
 }
 ul {
     list-style: none;
@@ -65,7 +72,6 @@ ul {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    min-height: 97px;
 }
 header {
     position: absolute;
@@ -78,6 +84,7 @@ header .container {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    min-height: 97px;
 }
 header .container::after {
     content: "";
@@ -193,12 +200,14 @@ header nav .toggle-menu {
 }
 .landing .fa-angle-left {
     left: 30px;
+    transition: 0.3s;
 }
 .landing .fa-angle-left:hover {
     left: 10px;
 }
 .landing .fa-angle-right {
     right: 30px;
+    transition: 0.3s;
 }
 .landing .fa-angle-right:hover {
     right: 10px;
@@ -451,6 +460,7 @@ header nav .toggle-menu {
     padding: 50px;
     color: white;
     background-color: var(--transparent-color);
+    transition: 0.3s;
 }
 .stats .box i {
     width: 40px;
@@ -473,7 +483,6 @@ header nav .toggle-menu {
 }
 .stats .container .box:hover {
     padding-top: 20px;
-    transition: 0.3s;
     background-color: var(--main-color);
 }
 .our-skills {
@@ -757,7 +766,7 @@ header nav .toggle-menu {
 }
 .subscribe form input[type="email"]:focus,
 .subscribe form input[type="submit"]:focus {
-outline: none;
+outline: 1px solid var(--main-color);
 }
 .contact {
     padding-top: var(--section-padding);
@@ -780,7 +789,7 @@ outline: none;
     width: 100%;
 }
 .contact .container form .main-input:focus {
-    outline: none;
+    outline: 1px solid var(--main-color);
 }
 .contact .container form textarea.main-input {
     height: 200px;
@@ -898,14 +907,12 @@ footer .copy-right span {
     }
     .landing .fa-angle-right:hover {
         right: 5px;
-        transition: 0.3s;
     }
     .landing .fa-angle-left {
         left: 10px;
     }
     .landing .fa-angle-left:hover {
         left: 5px;
-        transition: 0.3s;
     }
 
     header nav ul {
@@ -973,7 +980,7 @@ footer .copy-right span {
     .subscribe form input[type="email"] {
         font-size: 14px;
     }
-    .subscribe form input[type="subscribe"] {
+    .subscribe form input[type="submit"] {
         font-size: 14px;
     }
     .contact .container .contact-content {
