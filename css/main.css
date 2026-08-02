@@ -162,10 +162,13 @@ header nav .toggle-menu {
     color: white;
     display: flex;
     justify-content: flex-end;
+    max-width: 770px;
 }
 .landing .content {
     max-width: 500px;
     padding-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .landing  .content h2 {
     font-size: 32px;
