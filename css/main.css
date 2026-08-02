@@ -165,6 +165,7 @@ header nav .toggle-menu {
 }
 .landing .content {
     max-width: 500px;
+    padding-left: 20px;
 }
 .landing  .content h2 {
     font-size: 32px;
@@ -260,10 +261,9 @@ header nav .toggle-menu {
     position: relative;
     z-index: 2;
     flex: 1;
+    width: 50%;
 }
-.design .image {
-    text-align: center;
-}
+
 .design .image img {
     position: relative;
     bottom: -80px;
@@ -1038,6 +1038,10 @@ footer .copy-right span {
     header nav .toggle-menu {
         display: none;
     }
+    .portfolio .imgs-container .box {
+        flex-basis: 25%;
+    }
+
 } 
 @media (min-width: 1200px) {
     .container {
