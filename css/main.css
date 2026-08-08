@@ -483,7 +483,6 @@ header nav .toggle-menu {
     font-size: 14px;
 }
 .stats .container .box:hover {
-    padding-top: 20px;
     background-color: var(--main-color);
 }
 .our-skills {
@@ -917,13 +916,14 @@ footer .copy-right span {
         left: 5px;
     }
 
+
     header nav ul {
         display: none;
     }
     header nav .toggle-menu:hover {
         color: var(--main-color);
     }
-    header nav .toggle-menu:hover + ul {
+    header nav ul.open {
         display: flex;
         color: var(--main-color);
         flex-direction: column;
@@ -933,7 +933,7 @@ footer .copy-right span {
         width: 100%;
         background: #00000080;
     }
-    header nav .toggle-menu:hover + ul li a {
+    header nav ul li a {
         padding: 15px;
         font-size: 12px;
     }
@@ -955,10 +955,8 @@ footer .copy-right span {
         bottom: 0;
     }
     .stats .container .box {
-        flex-basis: 100%;
-    }
-    .stats .container .box {
         border-bottom: 1px solid black;
+        flex-basis: 100%;
     }
     .our-skills .testimonials .content {
         flex-direction: column;
